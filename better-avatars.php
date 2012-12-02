@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Dirty Suds - Better Avatars
-Plugin URI: http://515comics.com
+Plugin Name: Better Avatars
+Plugin URI: https://github.com/pathawks/Better-WP-Avatars
 Description: Tries hard to pull in avatars from Facebook and Twitter
 Author: Pat Hawks
 Version: 1.0
