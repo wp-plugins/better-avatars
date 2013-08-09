@@ -3,7 +3,7 @@ Contributors: pathawks
 Donate link: https://github.com/pathawks/Better-WP-Avatars
 Tags: avatars, Gravatar, Facebook, Twitter, Gmail, Disqus
 Requires at least: 3.3
-Tested up to: 3.5
+Tested up to: 3.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Stable tag: 1.0
@@ -22,6 +22,9 @@ When Gravatar has no image on file for a user, this plugin takes over and search
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.1 =
+* Updated Readme
 
 = 1.0 =
 * First Version
