@@ -4,8 +4,24 @@ Plugin Name: Better Avatars
 Plugin URI: https://github.com/pathawks/Better-WP-Avatars
 Description: Tries hard to pull in avatars from Facebook and Twitter
 Author: Pat Hawks
+Author URI: http://pathawks.com
+License: GPL2
 Version: 1.0
-Author URI: http://dirtysuds.com
+
+	Copyright 2014 Pat Hawks  (email : pat@pathawks.com)
+
+		This program is free software; you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation; either version 2 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program; if not, write to the Free Software
 */
 
 function dirtysuds_better_avatars_tumblr($url) {
@@ -78,7 +94,7 @@ function dirtysuds_better_avatars($avatar, $id_or_email, $size, $default, $alt) 
 		$email = get_user_meta( $id_or_email->user_id, 'user_email', TRUE);
 	}
 	$email = strtolower( $email );
-	
+
 	if ( empty( $email ) && empty( $id_or_email->comment_author_url ) )
 		return $avatar;
 
@@ -120,7 +136,7 @@ function dirtysuds_better_avatars($avatar, $id_or_email, $size, $default, $alt) 
 		set_site_transient( $transient, $cached_avatar, HOUR_IN_SECONDS );
 		return $cached_avatar;
 	}
-		
+
 	$cached_avatar = strtr($avatar,array(
 		'd='.get_option('avatar_default') => 'd='.urlencode($new_avatar),
 		"avatar-{$size} photo" => "avatar-{$size} photo {$class}",
