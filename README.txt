@@ -2,10 +2,10 @@
 Contributors: pathawks
 Donate link: https://github.com/pathawks/Better-WP-Avatars
 Tags: avatars, Gravatar, Facebook, Twitter, Gmail, Disqus
-Requires at least: 3.3
-Tested up to: 3.9.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Requires at least: 3.3
+Tested up to: 3.9.1
 Stable tag: 1.0
 
 Replace empty Gravatars with profile images from Facebook, Twitter, or Gmail
