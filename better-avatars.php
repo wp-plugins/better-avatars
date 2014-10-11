@@ -86,12 +86,12 @@ function dirtysuds_better_avatars($avatar, $id_or_email, $size, $default, $alt) 
 	$email = NULL;
 	if ( is_email( $id_or_email ) ) {
 		$email = $id_or_email;
-	} elseif ( strlen( $id_or_email->comment_author_email ) ) {
+	} elseif ( is_object($id_or_email) && strlen( $id_or_email->comment_author_email ) ) {
 		$email = $id_or_email->comment_author_email;
 	} elseif ( is_numeric($id_or_email) ) {
 		$id = (int) $id_or_email;
 		$email = get_user_meta( $id, 'user_email', TRUE);
-	} elseif ( !empty( $id_or_email->user_id ) ) {
+	} elseif ( is_object($id_or_email) && !empty( $id_or_email->user_id ) ) {
 		$email = get_user_meta( $id_or_email->user_id, 'user_email', TRUE);
 	}
 	$email = strtolower( $email );
